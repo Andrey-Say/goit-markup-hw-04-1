@@ -100,7 +100,22 @@ body {
   margin-left: auto;
 }
 
+.icon-email {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+
+.icon-email:hover,
+.icon-email:focus {
+  fill: var(--accent-color);
+}
+
 .header-email {
+  display: inline-flex;
+  align-items: center;
+
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -109,9 +124,24 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+}
+
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--accent-color);
 }
 
 .header-tel {
+  display: inline-flex;
+  align-items: center;
+
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -120,16 +150,22 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
 }
 
 .hero {
   text-align: center;
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/Img.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -181,6 +217,34 @@ body {
   margin-left: 30px;
 }
 
+/* .benefits-list .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+}
+
+.icon-antenna::before {
+  background-image: url(../img/antenna.png);
+}
+
+.icon-clock::before {
+  background-image: url(../img/clock.png);
+}
+
+.icon-diagram::before {
+  background-image: url(../img/diagram.png);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.png);
+} */
+
 .benefits-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -214,6 +278,10 @@ body {
 
 .work-list .item + .item {
   margin-left: 30px;
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .team-title {
@@ -264,6 +332,16 @@ body {
   text-align: center;
 }
 
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
@@ -293,6 +371,9 @@ body {
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .project-list {
@@ -303,6 +384,8 @@ body {
 .project-list .item {
   width: 370px;
   margin-bottom: 30px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list .item:not(:nth-child(3n)) {
@@ -350,6 +433,14 @@ footer {
   padding-bottom: 60px;
 }
 
+.footer-section {
+  display: flex;
+}
+
+.footer-container {
+  margin-right: 70px;
+}
+
 .footer-logo {
   margin-top: 0;
   margin-bottom: 20px;
@@ -384,3 +475,58 @@ footer {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.join-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.join-list {
+  display: flex;
+}
+
+/* .join-list .item::after {
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+}
+
+.icon-insta::after {
+  background-image: url(../img/instagram.png);
+}
+
+.icon-twit::after {
+  background-image: url(../img/twitter.png);
+}
+
+.icon-facebook::after {
+  background-image: url(../img/facebook.png);
+}
+
+.icon-in::after {
+  background-image: url(../img/linkedin.png);
+}
+
+.join-list .item:hover,
+.join-list .item:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.join-list .item + .item {
+  margin-left: 10px;
+} */
