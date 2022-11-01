@@ -107,8 +107,8 @@ body {
   fill: #757575;
 }
 
-.icon-email:hover,
-.icon-email:focus {
+.link:hover .icon-email,
+.link:focus .icon-email {
   fill: var(--accent-color);
 }
 
@@ -133,8 +133,8 @@ body {
   fill: #757575;
 }
 
-.icon-smartphone:hover,
-.icon-smartphone:focus {
+.link:focus .icon-smartphone,
+.link:hover .icon-smartphone {
   fill: var(--accent-color);
 }
 
