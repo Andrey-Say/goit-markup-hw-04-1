@@ -217,33 +217,19 @@ body {
   margin-left: 30px;
 }
 
-/* .benefits-list .item::before {
-  display: block;
-  content: '';
-  height: 120px;
+.icon-background {
+  padding-top: 25px;
   margin-bottom: 30px;
-
+  height: 120px;
   background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
 }
 
-.icon-antenna::before {
-  background-image: url(../img/antenna.png);
+.icon-background .icon {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
 }
-
-.icon-clock::before {
-  background-image: url(../img/clock.png);
-}
-
-.icon-diagram::before {
-  background-image: url(../img/diagram.png);
-}
-
-.icon-astronaut::before {
-  background-image: url(../img/astronaut.png);
-} */
 
 .benefits-title {
   margin-top: 0;
@@ -326,10 +312,46 @@ body {
 
 .team-speciality {
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.12;
   text-align: center;
+}
+
+.icon-social {
+  display: flex;
+  margin: auto;
+  width: 206px;
+  height: 44px;
+}
+
+.icon-item {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-item + .icon-item {
+  margin-left: 10px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+}
+
+.icon-item:hover,
+.icon-item:hover .icons,
+.icon-item:focus,
+.icon-item:focus .icons {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .clients-title {
@@ -340,6 +362,39 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item {
+  padding: 16px 32px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+
+.clients-list .icon {
+  display: block;
+  width: 106px;
+  height: 60px;
+  margin: auto;
+  fill: #afb1b8;
+}
+
+.clients-list .item:hover {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.clients-list .item:hover .icon {
+  fill: var(--accent-color);
 }
 
 .filter-list {
@@ -476,6 +531,10 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.join {
+  height: 80px;
+}
+
 .join-title {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -492,41 +551,21 @@ footer {
   display: flex;
 }
 
-/* .join-list .item::after {
+.join-list .item {
   display: block;
-  content: '';
+  padding: 12px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
-  background-repeat: no-repeat;
-  background-position: center;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
-  background-size: 20px;
-}
-
-.icon-insta::after {
-  background-image: url(../img/instagram.png);
-}
-
-.icon-twit::after {
-  background-image: url(../img/twitter.png);
-}
-
-.icon-facebook::after {
-  background-image: url(../img/facebook.png);
-}
-
-.icon-in::after {
-  background-image: url(../img/linkedin.png);
-}
-
-.join-list .item:hover,
-.join-list .item:focus {
-  border-radius: 50%;
-  background-color: var(--accent-color);
 }
 
 .join-list .item + .item {
   margin-left: 10px;
-} */
+}
+
+.join-list .item:hover,
+.join-list .item:focus {
+  background-color: var(--accent-color);
+}
